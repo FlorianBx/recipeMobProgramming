@@ -1,7 +1,7 @@
 export interface Recipe {
-  id: number;
+  id?: number;
   name: string;
-  ingredients: string[];
+  ingredients: string;
   description: string;
   imagePath?: string;
   prepTime?: number;

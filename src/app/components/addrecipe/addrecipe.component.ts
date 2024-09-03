@@ -20,6 +20,8 @@ export class AddrecipeComponent {
     prepTime: new FormControl(15),
 
    })
+
+
    constructor(
     private recipeService: RecipeService,
     private router: Router
@@ -28,7 +30,14 @@ export class AddrecipeComponent {
 
 
 submitForm() {
-  console.log(this.addrecipeForm.value);
+  const recipe: Recipe={
+    name: this.addrecipeForm.value.name as string,
+    ingredients: this.addrecipeForm.value.ingredients as string,
+    description: this.addrecipeForm.value.description as string,
+    imagePath: this.addrecipeForm.value.imagePath as string,
+    prepTime: this.addrecipeForm.value.prepTime as number,
+  }
+ this.recipeService.addrecipe(recipe);
 
 
 }

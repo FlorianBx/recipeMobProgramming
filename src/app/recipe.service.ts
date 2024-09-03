@@ -9,7 +9,7 @@ export class RecipeService {
     {
       id: 1,
       name: 'Pizza',
-      ingredients: ['Tomato', 'Cheese'],
+      ingredients: 'Tomato Cheese',
       description: 'This is a pizza',
       imagePath: 'assets/pizza.jpg',
       prepTime: 30
@@ -17,7 +17,7 @@ export class RecipeService {
     {
       id: 2,
       name: 'Pasta',
-      ingredients: ['Tomato', 'Cheese'],
+      ingredients: 'Tomato Cheese',
       description: 'This is a pasta',
       imagePath: 'assets/pasta.jpg',
       prepTime: 30
@@ -25,7 +25,7 @@ export class RecipeService {
     {
       id: 3,
       name: 'Salad',
-      ingredients: ['Tomato', 'Cheese'],
+      ingredients: 'TomatoCheese',
       description: 'This is a salad',
       imagePath: 'assets/salad.jpg',
       prepTime: 30
