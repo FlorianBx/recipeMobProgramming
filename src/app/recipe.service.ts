@@ -41,4 +41,10 @@ export class RecipeService {
   getRecipeById(id: number) {
     return this.recipes.find(recipe => recipe.id === id)
   }
+
+addrecipe(recipe:Recipe ) {
+  console.log(recipe);
+}
+
+
 }

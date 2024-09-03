@@ -1,0 +1,19 @@
+<form [formGroup]="addrecipeForm" (ngSubmit)="submitForm()">
+  <label for="name">Name:</label>
+  <input name="name" type="text" formControlName="name">
+
+  <label for="ingredient">ingredient:</label>
+  <input name="ingredient" type="text" formControlName="ingredients">
+
+  <label for="description">description:</label>
+  <input name="description" type="text" formControlName="description">
+
+  <label for="imagePath">imagePath:</label>
+  <input name="imagePath" type="text" formControlName="imagePath">
+
+  <label for="prepTime">Number:</label>
+  <input name="prepTime" type="number" formControlName="prepTime">
+
+  <button type="submit">Envoyer</button>
+
+</form>
