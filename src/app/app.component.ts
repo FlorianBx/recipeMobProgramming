@@ -17,17 +17,14 @@ export class AppComponent {
   title = 'recipeMob';
   recipes: Recipe[] = [];
 
-constructor(public recipeService: RecipeService) {
+  constructor(public recipeService: RecipeService) {
 
 
-}
+  }
 
-ngOnInit() {
-  this.recipes = this.recipeService.getRecipes();
-  this.recipeService.getRecipes();
-  console.log(this.recipeService.getRecipes());
+  ngOnInit() {
+    this.recipes = this.recipeService.getRecipes();
 
-}
+  }
 
 }
-

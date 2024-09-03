@@ -1,1 +1,11 @@
-<p>detail works!</p>
+@if (recipe) {
+  <h2>{{recipe.name}}</h2>
+  <p>{{recipe.description}}</p>
+
+  <h3>Ingredients</h3>
+  <ul>
+    @for (ingredient of recipe.ingredients ; track ingredient) {
+      <li>{{ingredient}}</li>
+    }
+  </ul>
+}

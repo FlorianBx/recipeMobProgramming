@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RecipeService } from '../../recipe.service';
 import { Recipe } from '../../models/recipe.model';
 import { Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })

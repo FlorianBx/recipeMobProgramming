@@ -1,11 +1,5 @@
 @for (recipe of recipes; track recipe.id) {
   <ul>
-    <li><a href="recipes/{{recipe.id}}">{{recipe.name}}</a></li>
-  </ul>
-}
-
-@for (recipe of recipes; track recipe.id) {
-  <ul>
-    <li><button class="joli" (click)="goToDetail(recipe.id)">{{recipe.name}}</button></li>
+    <li><a class="joli" [routerLink]="['/recipes', recipe.id]">{{recipe.name}}</a></li>
   </ul>
 }
